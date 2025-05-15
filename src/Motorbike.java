@@ -19,12 +19,12 @@ public class Motorbike extends Vehicle{
     }
 
     @Override
-    public void accelerate() {
-        this.velocity += 30;
+    public void puncturedWheel() {
+        this.wheels -= 2;
     }
 
     @Override
-    public void decelerate() {
-        this.velocity -= 20;
+    public void wheelChanged() {
+        this.wheels += 2;
     }
 }
