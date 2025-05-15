@@ -29,7 +29,7 @@ public abstract class Vehicle {
         this.wheels = wheels;
     }
 
-    public abstract void accelerate();
+    public abstract void puncturedWheel();
 
-    public abstract void decelerate();
+    public abstract void wheelChanged();
 }
