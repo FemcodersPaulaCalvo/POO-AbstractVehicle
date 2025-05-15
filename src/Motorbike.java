@@ -1,4 +1,4 @@
-public class Motorbike extends Vehicle{
+public class Motorbike extends Vehicle implements VehicleMovement{
     public Motorbike(String brand, int wheels) {
         super(brand, wheels);
     }
@@ -26,5 +26,15 @@ public class Motorbike extends Vehicle{
     @Override
     public void wheelChanged() {
         this.wheels += 2;
+    }
+
+    @Override
+    public void accelerate() {
+        this.velocity += 30;
+    }
+
+    @Override
+    public void decelerate() {
+        this.velocity += 10;
     }
 }

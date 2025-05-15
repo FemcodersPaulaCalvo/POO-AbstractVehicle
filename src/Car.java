@@ -27,4 +27,14 @@ public class Car extends Vehicle {
     public void wheelChanged() {
         this.wheels += 1;
     }
+
+    @Override
+    public void accelerate() {
+        this.velocity += 20;
+    }
+
+    @Override
+    public void decelerate() {
+        this.velocity -= 20;
+    }
 }

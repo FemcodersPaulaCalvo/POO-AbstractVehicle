@@ -1,4 +1,4 @@
-public abstract class Vehicle {
+public abstract class Vehicle implements VehicleMovement {
     private String brand;
     protected int velocity;
     protected int wheels;
