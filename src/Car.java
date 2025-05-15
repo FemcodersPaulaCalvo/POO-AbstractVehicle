@@ -19,12 +19,12 @@ public class Car extends Vehicle {
     }
 
     @Override
-    public void accelerate() {
-        this.velocity += 20;
+    public void puncturedWheel() {
+        this.wheels -= 1;
     }
 
     @Override
-    public void decelerate() {
-        this.velocity -= 20;
+    public void wheelChanged() {
+        this.wheels += 1;
     }
 }
